@@ -1,0 +1,23 @@
+# Configuración del dataset en formato YOLO (Ultralytics).
+# Estructura esperada (rutas relativas a `path`):
+#
+#   datos/
+#     images/train/*.jpg   labels/train/*.txt
+#     images/val/*.jpg     labels/val/*.txt
+#     images/test/*.jpg    labels/test/*.txt
+#
+# Cada .txt tiene una línea por objeto: <clase> <x_centro> <y_centro> <ancho> <alto> (normalizados 0-1).
+
+path: ../datos
+train: images/train
+val: images/val
+test: images/test
+
+# Las 5 categorías de la interfaz. Los datos se generan con entrenamiento/preparar_dataset.py
+# a partir del Trash Detection Dataset (Kan, 2025; CC BY 4.0).
+names:
+  0: Metal
+  1: Vidrio
+  2: Plastico
+  3: Papel_Carton
+  4: Organico

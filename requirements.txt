@@ -1,0 +1,5 @@
+# Python 3.10 - 3.12
+ultralytics>=8.3,<9      # YOLOv8 (instala torch, opencv-python, numpy y pillow)
+opencv-python>=4.8
+pillow>=10.0
+numpy>=1.24

@@ -1,0 +1,24 @@
+# Entornos virtuales (se recrean con requirements.txt)
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.idea/
+.vscode/
+
+# Salidas generadas
+/runs/
+/resultados/
+respaldo/
+
+# Dataset (pesado: documentar su origen en docs/MODELO.md)
+datos/
+datos_crudos/
+
+# Pesos de YOLO descargados automáticamente al entrenar
+yolov8*.pt
